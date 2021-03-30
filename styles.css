@@ -21,12 +21,16 @@
   z-index: 2;
 }
 
+.showcase.active {
+  right: 275px;
+}
+
 .logo {
   text-transform: uppercase;
   cursor: pointer;
 }
 
-header {
+.showcase header {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,7 +93,7 @@ header {
 }
 
 .text h3 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -135,10 +139,27 @@ header {
   display: inline-block;
   filter: invert(1);
   margin-right: 1.25rem;
-  transform: scale(0.5);
+  transform: scale(0.65);
   transition: 0.4s;
 }
 
 .social li a:hover {
-  transform: scale(0.5) translateY(-1rem);
+  transform: scale(0.65) translateY(-1rem);
+}
+
+@media(max-width: 991px) {
+  /* Apply under 991 px */
+
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .text h3 {
+    font-size: 2rem;
+  }
 }
