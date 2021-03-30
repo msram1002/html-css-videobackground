@@ -21,8 +21,21 @@
   z-index: 2;
 }
 
-.showcase header {
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toggle {
@@ -34,4 +47,4 @@
   background-size: 30px;
   background-position: center;
   cursor: pointer;
-} 
+}
