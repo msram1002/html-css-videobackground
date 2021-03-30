@@ -48,3 +48,11 @@ header {
   background-position: center;
   cursor: pointer;
 }
+
+.toggle.active {
+  background: url('close.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
