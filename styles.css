@@ -117,3 +117,28 @@ header {
 .text a:hover {
   letter-spacing: 6px;
 }
+
+.social {
+  position: absolute;
+  bottom: 1.5rem;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(1);
+  margin-right: 1.25rem;
+  transform: scale(0.5);
+  transition: 0.4s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-1rem);
+}
