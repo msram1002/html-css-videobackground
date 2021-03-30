@@ -16,8 +16,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 2;
 }
 
-.menu {
-  display: none;
+.showcase header {
+
 }
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url('menu.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+} 
