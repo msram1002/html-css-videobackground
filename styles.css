@@ -98,9 +98,22 @@ header {
   font-size: 1.2rem;
   margin: 20px 0;
   font-weight: 400;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 .text a {
-  
+  display: inline-block;
+  font-size: 1rem;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
 }
