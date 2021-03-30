@@ -40,12 +40,18 @@
   </div>
 
   <script>
-    const menuToggle = document.querySelector('.toggle');
-    const showcase = document.querySelector('.showcase');
+    const toggleBtn = document.querySelector('.toggle');
+    const menuList = document.querySelector('.menu');
 
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      showcase.classList.toggle('active');
+    toggleBtn.addEventListener('click', (event) => {
+      event.stopPropagation();
+      toggleBtn.classList.toggle('active');
+      menuList.classList.toggle('active');
+    })
+
+    window.addEventListener('click', () => {
+      toggleBtn.classList.toggle('active');
+      menuList.classList.toggle('active');
     })
   </script>
 </body>
