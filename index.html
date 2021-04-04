@@ -50,8 +50,10 @@
     })
 
     window.addEventListener('click', () => {
-      toggleBtn.classList.toggle('active');
-      menuList.classList.toggle('active');
+      if (toggleBtn.getAttribute("class") === "toggle active") {
+        toggleBtn.classList.toggle('active');
+        menuList.classList.toggle('active'); 
+      }
     })
   </script>
 </body>
